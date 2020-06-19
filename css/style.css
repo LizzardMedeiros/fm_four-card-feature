@@ -1,0 +1,56 @@
+.layout {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+  background-image: url(../design/desktop-design.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+body, header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+header {
+  width: 35%;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 75px;
+  color: hsl(234, 12%, 34%);
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.43em;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2.43em;
+  font-weight: 200;
+}
+
+small {
+  color: hsl(229, 6%, 66%);
+  margin-top: 15px;
+  font-size: 1.01em;
+}
