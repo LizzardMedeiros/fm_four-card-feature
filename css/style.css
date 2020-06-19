@@ -54,3 +54,14 @@ small {
   margin-top: 15px;
   font-size: 1.01em;
 }
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.content .group {
+  border: 1px solid red;
+  width: 200px;
+}
