@@ -27,12 +27,15 @@ body {
   min-height: 100vh;
 }
 
+header, h3 {
+  color: hsl(234, 12%, 34%);
+}
+
 header {
   width: 35%;
   justify-content: space-between;
   text-align: center;
   margin-top: 75px;
-  color: hsl(234, 12%, 34%);
 }
 
 h1, h2 {
@@ -49,19 +52,54 @@ h2 {
   font-weight: 200;
 }
 
-small {
+p, small {
   color: hsl(229, 6%, 66%);
+}
+
+h3, p {
+  margin: 0 32px;
+}
+
+h3 {
+  margin-top: 28px;
+  font-size: 1.33em;
+}
+
+p {
+  font-size: 0.88em;
+  margin-top: 11px;
+}
+
+small {
   margin-top: 15px;
   font-size: 1.01em;
 }
 
 .content {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  padding-top: 50px;
   width: 100%;
 }
 
 .content .group {
-  border: 1px solid red;
-  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  width: 25%;
+}
+
+.content .group section {
+  border-radius: 7px;
+  width: 350px;
+  height: 250px;
+  margin: 13px 0;
+  box-shadow: 0 15px 20px rgb(216, 226, 238);
+}
+
+.content .group section .img-container {
+  text-align: right;
+  margin: 42px 32px;
 }
