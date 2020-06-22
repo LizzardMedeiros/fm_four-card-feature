@@ -40,15 +40,14 @@ header {
 
 h1, h2 {
   margin: 0;
+  font-size: 2.43em;
 }
 
 h1 {
-  font-size: 2.43em;
   font-weight: 600;
 }
 
 h2 {
-  font-size: 2.43em;
   font-weight: 200;
 }
 
@@ -95,11 +94,66 @@ small {
   border-radius: 7px;
   width: 350px;
   height: 250px;
-  margin: 13px 0;
+  margin: 15px 0;
   box-shadow: 0 15px 20px rgb(216, 226, 238);
 }
 
 .content .group section .img-container {
   text-align: right;
   margin: 42px 32px;
+}
+
+/*------------ RESPONSIVE -------------*/
+
+@media only screen and (max-width: 1300px) {
+  .layout {
+    background-image: url(../design/mobile-design.jpg);
+  }
+
+  header {
+    margin-top: 84px;
+    width: 85%;
+  }
+
+  h1, h2 {
+    font-size: 1.61em;
+  }
+
+  h3, p {
+    margin: 0 25px;
+  }
+
+  h3 {
+    margin-top: 25px;
+  }
+
+  p {
+    color: red;
+    margin-top: 5px;
+  }
+
+  small {
+    margin-top: 18px;
+    font-size: 1em;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content .group section {
+    width: 300px;
+    height: 200px;
+    margin-top: 25px;
+  }
+
+  .content .group section .img-container {
+    margin: 34px 25px;
+  }
+
+  .content .group section .img-container img{
+    width: 55px;
+  }
+
 }
